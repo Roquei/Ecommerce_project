@@ -4,42 +4,42 @@ const products = [
         name: "Tênis de Corrida",
         description: "Confortável, leve e ideal para treinos diários.",
         price: 259.90,
-        image: "https://picsum.photos/seed/running/520/360"
+        image: "img/tenis.jpg"
     },
     {
         id: 2,
         name: "Fone Bluetooth",
         description: "Som nítido e autonomia para o dia todo.",
         price: 179.90,
-        image: "https://picsum.photos/seed/headphones/520/360"
+        image: "img/fone bluetooth.jpg"
     },
     {
         id: 3,
         name: "Mochila Casual",
         description: "Espaçosa e resistente para o uso diário.",
         price: 129.90,
-        image: "https://picsum.photos/seed/backpack/520/360"
+        image: "img/mochila.jpg"
     },
     {
         id: 4,
         name: "Relógio Smart",
         description: "Design moderno com monitoramento de atividades.",
         price: 399.90,
-        image: "https://picsum.photos/seed/smartwatch/520/360"
+        image: "img/relogio smart.jpg"
     },
     {
         id: 5,
         name: "Camiseta Premium",
         description: "Algodão macio com corte confortável.",
         price: 89.90,
-        image: "https://picsum.photos/seed/tshirt/520/360"
+        image: "img/camiseta.jpg"
     },
     {
         id: 6,
         name: " óculos de Sol",
         description: "Proteção UV com estilo elegante.",
         price: 99.90,
-        image: "https://picsum.photos/seed/sunglasses/520/360"
+        image: "img/oculos de sol.jpg"
     }
 ];
 
