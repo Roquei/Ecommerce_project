@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protótipo de E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <header class="topbar">
+            <div class="brand">
+                <div class="brand__mark">E</div>
+                <div>
+                    <h1>Loja E-commerce</h1>
+                    <p class="text-muted">Protótipo front-end para estudo e publicação no GitHub.</p>
+                </div>
+            </div>
+
+            <nav class="navbar">
+                <button type="button" class="active" data-section="home">Início</button>
+                <button type="button" data-section="products">Produtos</button>
+                <button type="button" data-section="cart">Carrinho</button>
+                <button type="button" data-section="checkout">Finalizar</button>
+            </nav>
+
+            <div class="cart-counter">
+                <span>Carrinho:</span>
+                <strong id="cart-count">0</strong>
+            </div>
+        </header>
+
+        <main>
+            <section id="home" class="page active">
+                <article class="hero">
+                    <div>
+                        <h2>Construa um e-commerce moderno e simples em um protótipo funcional.</h2>
+                        <p>Explore produtos, adicione itens ao carrinho e finaliza a compra com um formulário de checkout. Ideal para demonstrar seu projeto no GitHub.</p>
+                    </div>
+                    <div class="hero-actions">
+                        <button type="button" class="button" data-section="products">Ver Produtos</button>
+                        <button type="button" class="button--secondary" data-section="checkout">Ir para Compra</button>
+                    </div>
+                </article>
+            </section>
+
+            <section id="products" class="page">
+                <h2>Produtos</h2>
+                <div class="grid-products" id="product-grid"></div>
+            </section>
+
+            <section id="cart" class="page">
+                <h2>Carrinho</h2>
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Descrição</th>
+                            <th>Quantidade</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-body"></tbody>
+                </table>
+
+                <div class="cart-actions">
+                    <button type="button" class="button" data-section="checkout">Finalizar Compra</button>
+                    <div class="summary-row summary-total" style="margin-left:auto;">Total: <strong id="cart-total">R$ 0,00</strong></div>
+                </div>
+            </section>
+
+            <section id="checkout" class="page">
+                <h2>Área de Compra</h2>
+                <div class="checkout-grid">
+                    <form id="checkout-form">
+                        <div class="form-grid">
+                            <div class="input-group">
+                                <label for="name">Nome completo</label>
+                                <input id="name" name="name" type="text" placeholder="Seu nome" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="email">E-mail</label>
+                                <input id="email" name="email" type="email" placeholder="email@exemplo.com" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="address">Endereço</label>
+                                <textarea id="address" name="address" placeholder="Rua, número, bairro" required></textarea>
+                            </div>
+                            <div class="input-group">
+                                <label for="payment">Método de pagamento</label>
+                                <input id="payment" name="payment" type="text" placeholder="Cartão, Pix, boleto" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="button" style="margin-top: 14px;">Confirmar Pedido</button>
+                    </form>
+
+                    <aside class="checkout-summary" id="checkout-summary"></aside>
+                </div>
+
+                <div id="order-message"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
